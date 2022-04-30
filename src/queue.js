@@ -21,7 +21,6 @@ class Queue {
   }
   getUnderlyingList() {
     let current = this.head;
-    
     return { value: current.value, next: current.next }
   }
 
@@ -40,7 +39,6 @@ class Queue {
   dequeue() {
     const current = this.head;
     this.head = this.head.next;
-    this.length--;
 
     return current.value;
   }
