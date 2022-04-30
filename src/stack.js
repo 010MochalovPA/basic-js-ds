@@ -13,9 +13,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 
-class Node {
-  constructor (value){
-    this.value = value;
+class ListNode {
+  constructor(x) {
+    this.value = x;
     this.next = null;
   }
 }
@@ -25,7 +25,7 @@ class Stack {
     this.length = 0;
   }
   push(element) {
-    const node = new Node(element);
+    const node = new ListNode(element);
     
     if (this.head){
       node.next = this.head;
